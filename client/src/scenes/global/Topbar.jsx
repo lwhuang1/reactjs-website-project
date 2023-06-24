@@ -71,18 +71,3 @@ const Topbar = () => {
 };
 
 export default Topbar;
-
-          {/* <NavLink to='/player-interior-dashboard' activeStyle>
-            Player Profiles
-          </NavLink>
-          <NavLink to='/player-compare' activeStyle>
-            Compare Players
-          </NavLink>
-          <NavLink to='/players' activeStyle>
-            Players Index
-          </NavLink> */}
-
-                      {/* <SlideMenu ref={menu} model={items} popup viewportHeight={220} menuWidth={175} />
-            <Button type="button" icon="pi pi-bars pi pi-user" label="Account" rounded
-            onClick={(event) => menu.current.toggle(event)} style={{ height: '75%', marginRight: '15px', backgroundColor: "black" }} />
-            <i className="pi pi-user" style={{ fontSize: '1.5rem', marginRight: "10px" }}></i> */}
