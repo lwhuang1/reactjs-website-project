@@ -73,7 +73,7 @@ const Login = () => {
 
             if (response.status === 200) {
                 setIsProcessing(false)
-                // window.location.href = '/home'
+                window.location.href = '/home'
                 return
 
             } else {
