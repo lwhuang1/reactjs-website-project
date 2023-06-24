@@ -61,7 +61,7 @@ const loginUser = async (req, res) => {
 }
 
 const logoutUser = async (req, res) => {
-    console.log('Attempting to logout...')
+    console.log('Attempting to logout...and seeing if user info (user: {id: ..., email: ..., sessionID: ...}) exists in the session when pressing logout')
     console.log('The session before:', req.session)
     // destroy session to log out the user
     req.session.destroy((error) => {
@@ -91,7 +91,7 @@ const isLoggedIn = async (req, res) => {
 const showSession = async(req, res) => {
     // show session
     console.log('The current session:', req.session)
-    console.log(req)
+    console.log('The sessions store', req.sessionStore)
     const data = { data: req.session, cookies: req.cookies }
     res.json(data)
 }

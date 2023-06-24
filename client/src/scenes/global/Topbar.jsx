@@ -58,13 +58,15 @@ const Topbar = () => {
           <NavLink to='/account' className={isActiveAccountLink() ? 'active' : ''}>
             Account<i className="pi pi-user" style={{ fontSize: '1rem', marginLeft: "10px" }}></i>
           </NavLink>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          {/* <div style={{ display: 'flex', alignItems: 'center' }}>
             <button>
               <i className="pi pi-sign-out" onClick={handleLogout} style={{ fontSize: '1rem', marginRight: "10px" }}></i>
             </button>
-          </div>
+          </div> */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <Button label='Logout' severity="danger" style={{ marginLeft: "10px", marginRight: "10px" }}/>
+            <Button label='Logout' severity="danger" style={{ marginLeft: "10px", marginRight: "10px" }}
+             onClick={handleLogout}
+            />
           </div>
       </Nav>
     </>

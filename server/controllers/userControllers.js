@@ -24,7 +24,7 @@ const createUser = async (req, res) => {
             first_name: firstName,
             last_name: lastName,
             email: email,
-            passwoErd: hashedPassword,
+            password: hashedPassword,
             phone: phone,
             role: role,
         })
