@@ -30,9 +30,6 @@ const Topbar = () => {
           <NavLink to='/home' >
             Home
           </NavLink>
-          <NavLink to='/podcasts' >
-            Podcasts
-          </NavLink>
           <NavLink to='/visuals' >
             Visuals
           </NavLink>
