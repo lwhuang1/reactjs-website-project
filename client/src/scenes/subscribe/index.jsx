@@ -87,9 +87,9 @@ const Subscribe = () => {
                 <p className="subtitle" style={{ fontSize: "20px" }}>Feel free to cancel anytime.</p>
                 <div className="cards-container" style={{ display: "flex", flexDirection: "row", justifyContent: "center", padding: "1rem", paddingBottom: "3rem", width: "70%" }}>
 
-                        <div onClick={chooseMonthlyPlan}>
+                        <div>
                             <Card title="Basic / Monthly" subTitle="$4.99 / month" header={monthlyHeader} // footer={monthlyFooter}
-                            className={isMonthlySelected ? 'card-selected' : ''} 
+                            className={isMonthlySelected ? 'card-selected' : ''} onClick={chooseMonthlyPlan} 
                             style={{ width: "325px", marginTop: "4rem", borderRadius: "15px" }}
                             >
                                 <p className="m-0">
@@ -99,9 +99,9 @@ const Subscribe = () => {
                             </Card>
                         </div>
                     
-                        <div onClick={chooseAnnualPlan}>
+                        <div>
                             <Card title="Premium / Annually" subTitle="$49.99 / year" header={annuallyHeader} // footer={annuallyFooter}
-                            className={isAnnuallySelected ? 'card-selected' : ''} 
+                            className={isAnnuallySelected ? 'card-selected' : ''} onClick={chooseAnnualPlan} 
                             style={{ width: "325px",marginLeft: "3rem", marginRight: "3rem", marginBottom: "4rem", borderRadius: "15px" }}
                             >
                                 <p className="m-0">
@@ -111,9 +111,9 @@ const Subscribe = () => {
                             </Card>
                         </div>
 
-                        <div onClick={chooseBiannualPlan}>
+                        <div>
                             <Card title="Pro / Bi-Annually" subTitle="$26.99 / 6 months" header={biannuallyHeader} // footer={biannuallyFooter}
-                            className={isBianuallySelected ? 'card-selected' : ''} 
+                            className={isBianuallySelected ? 'card-selected' : ''} onClick={chooseBiannualPlan} 
                             style={{ width: "325px", marginTop: "4rem", borderRadius: "15px" }} 
                             >
                                 <p className="m-0">
